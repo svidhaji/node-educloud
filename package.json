@@ -1,0 +1,22 @@
+{
+  "name": "node-educloud",
+  "version": "1.0.0",
+  "description": "first steps in node.js app using node package manager ()\u001b[Dnpm)\u001b[C\u001b[D and making web connection",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "keywords": [
+    "express",
+    "npm",
+    "node.js",
+    "basics"
+  ],
+  "author": "Said Haji",
+  "license": "GPL-3.0",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4"
+  }
+}
