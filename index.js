@@ -1,14 +1,27 @@
 'use strict';
 
-console.log('Moi');
-
+require('dotenv').config();
 const express = require('express');
 const bodyParser = require('body-parser');
 const app = express();
+const mysql = require('mysql2');
+
+const conn = mysql.createConnection({
+  host: process.env.DB_HOST,
+  user: process.env.DB_USER,
+  password: process.env.DB_PASS,
+  database: process.env.DB_NAME
+});
 
 app.get('/', (req, res) => {
-  res.send('HAHAHAHAHAH');
+  conn.query(
+  'CREATE TABLE snake',
+	(err, results, fields) => {
+     console.log(results);
+     console.log(fields);
+}
 });
+
 app.post('/', bodyParser.urlencoded({extended : true}),(req, res) => {
   console.log(req.body);
   res.send('POst: HEllo' + req.body.name);
