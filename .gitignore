@@ -62,3 +62,4 @@ typings/
 
 ca.csr
 ca.key
+ca.crt
