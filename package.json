@@ -1,7 +1,7 @@
 {
   "name": "node-educloud",
   "version": "1.0.0",
-  "description": "first steps in node.js app using node package manager ()\u001b[Dnpm)\u001b[C\u001b[D and making web connection",
+  "description": "first steps in node.js app using node package manager (npm) and making web connection",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -17,6 +17,12 @@
   "license": "GPL-3.0",
   "dependencies": {
     "body-parser": "^1.18.3",
-    "express": "^4.16.4"
+    "cookie-parser": "^1.4.4",
+    "dotenv": "7.0.0",
+    "express": "4.16.4",
+    "express-session": "1.16.1",
+    "mysql2": "1.6.5",
+    "passport": "0.4.0",
+    "passport-local": "1.0.0"
   }
 }
