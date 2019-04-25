@@ -7,6 +7,14 @@ const app = express();
 const bodyParser = require('body-parser');
 const passport = require('passport');
 const Strategy = require('passport-local').Strategy;
+const bcrypt = require('bcrypt');
+const saltRounds = 12;
+const myPlainPassword = 'test123';
+
+bcrypt.hash(myPlainPassword, saltRounds, (err, hash) => {
+  //Store hash in your password DB
+  console.log(hash);
+});
 
 passport.use(new Strategy(
     (username, password, done) => {

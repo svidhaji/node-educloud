@@ -16,6 +16,7 @@
   "author": "Said Haji",
   "license": "GPL-3.0",
   "dependencies": {
+    "bcrypt": "^3.0.6",
     "body-parser": "^1.18.3",
     "cookie-parser": "^1.4.4",
     "dotenv": "7.0.0",
